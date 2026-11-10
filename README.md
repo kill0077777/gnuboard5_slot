@@ -47,3 +47,8 @@ PHP 패키지를 업데이트한 뒤에는 웹 요청을 처리하는 실제 런
 - DB 계정에 `g5_slot_member` 생성 및 갱신 권한이 필요합니다.
 - 페이지는 그누보드5 `common.php`, `head.php`, `tail.php`를 사용하므로 반드시 `plugin/slot/` 경로에 설치해야 합니다.
 - 운영 서버에 반영하기 전 테스트 계정으로 로그인, 잔액 차감, 당첨 지급, 새로고침 및 동시 요청을 점검하십시오.
+
+
+## 이벤트 게시판
+
+그누보드5 이벤트 카드형 게시판 스킨과 이미지 첨부 등록·수정 기능은 [`skin/board/event/`](skin/board/event/)에 있습니다. 설치·관리자 설정은 [이벤트 게시판 안내](docs/event-board.md)를 참고하세요. 이벤트 기간은 서버에서도 검증합니다. [목록 화면 시안](docs/images/event-board-list-mockup.png)과 [등록·수정 화면 시안](docs/images/event-board-edit-mockup.png)도 함께 제공합니다.
