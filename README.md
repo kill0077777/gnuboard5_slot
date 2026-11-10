@@ -51,4 +51,4 @@ PHP 패키지를 업데이트한 뒤에는 웹 요청을 처리하는 실제 런
 
 ## 이벤트 게시판
 
-그누보드5 이벤트 카드형 게시판 스킨과 이미지 첨부 등록·수정 기능은 [`skin/board/event/`](skin/board/event/)에 있습니다. 설치·관리자 설정은 [이벤트 게시판 안내](docs/event-board.md)를 참고하세요. 이벤트 기간은 서버에서도 검증합니다. [목록 화면 시안](docs/images/event-board-list-mockup.png)과 [등록·수정 화면 시안](docs/images/event-board-edit-mockup.png)도 함께 제공합니다.
+그누보드5 이벤트 카드형 게시판 스킨과 이미지 첨부 기능은 [`skin/board/event/`](skin/board/event/)에 있습니다. 기존 글 수정은 관리자만 가능하며, 기간 및 업로드 이미지 형식도 서버에서 검증합니다. 설치·관리자 설정은 [이벤트 게시판 안내](docs/event-board.md)를 참고하세요. [목록 화면 시안](docs/images/event-board-list-mockup.png)과 [등록·수정 화면 시안](docs/images/event-board-edit-mockup.png)도 함께 제공합니다.

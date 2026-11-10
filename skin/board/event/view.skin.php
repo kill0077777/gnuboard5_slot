@@ -2,6 +2,7 @@
 if (!defined('_GNUBOARD_')) exit;
 include_once(G5_LIB_PATH . '/thumbnail.lib.php');
 add_stylesheet('<link rel="stylesheet" href="' . $board_skin_url . '/style.css">', 0);
+$event_admin = in_array($is_admin ?? '', ['super', 'group', 'board'], true);
 
 $valid_event_date = function ($value) {
     return is_string($value) && preg_match('/^\d{4}-\d{2}-\d{2}$/', $value) ? $value : '';
@@ -29,7 +30,7 @@ if (!$event_start && !$event_end) {
                 <h2><?=htmlspecialchars($view['wr_subject'], ENT_QUOTES, G5_CHARSET)?></h2>
             </div>
             <div class="evt-view__actions">
-                <?php if ($update_href) { ?><a class="evt-button evt-button--light" href="<?=htmlspecialchars($update_href, ENT_QUOTES, G5_CHARSET)?>">수정</a><?php } ?>
+                <?php if ($event_admin && $update_href) { ?><a class="evt-button evt-button--light" href="<?=htmlspecialchars($update_href, ENT_QUOTES, G5_CHARSET)?>">수정</a><?php } ?>
                 <?php if ($delete_href) { ?><a class="evt-button evt-button--light" href="<?=htmlspecialchars($delete_href, ENT_QUOTES, G5_CHARSET)?>" onclick="return confirm('이 이벤트를 삭제하시겠습니까?');">삭제</a><?php } ?>
             </div>
         </div>
